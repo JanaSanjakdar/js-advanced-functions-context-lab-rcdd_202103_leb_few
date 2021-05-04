@@ -16,28 +16,22 @@ let createEmployeeRecords = function(employeeRowData) {
     })
 }
 
-let createTimeInEvent = function(employee, dateStamp){
-    let [date, hour] = dateStamp.split(' ')
-
-    employee.timeInEvents.push({
+let createTimeInEvent = function (dateStamp){
+    this.timeInEvents.push({
         type: "TimeIn",
-        hour: parseInt(hour, 10),
-        date,
+        hour: parseInt(dateStamp.split(" ")[1]),
+        date: dateStamp.split(" ")[0]
     })
-
-    return employee
+    return this
 }
 
-let createTimeOutEvent = function(employee, dateStamp){
-    let [date, hour] = dateStamp.split(' ')
-
-    employee.timeOutEvents.push({
+let createTimeOutEvent = function (dateStamp){
+    this.timeOutEvents.push({
         type: "TimeOut",
-        hour: parseInt(hour, 10),
-        date,
+        hour: parseInt(dateStamp.split(" ")[1]),
+        date: dateStamp.split(" ")[0]
     })
-
-    return employee
+    return this
 }
 
 let hoursWorkedOnDate = function(employee, specificDate){
@@ -101,3 +95,4 @@ let allWagesFor = function () {
 
     return payable
 }
+
