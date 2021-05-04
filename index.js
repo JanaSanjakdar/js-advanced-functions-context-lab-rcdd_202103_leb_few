@@ -8,7 +8,7 @@ let createEmployeeRecord = function ([firstName, familyName, title, payRate]) {
         timeInEvents: [],
         timeOutEvents: []
     }
-    return x 
+    return x
 }
 
 let createEmployeeRecords = function (array){
