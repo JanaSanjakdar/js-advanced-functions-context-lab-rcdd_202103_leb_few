@@ -68,11 +68,11 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
     })
   }
 
-  let calculatePayroll = function(arrayOfEmployeeRecords){
+/*  let calculatePayroll = function(arrayOfEmployeeRecords){
       return arrayOfEmployeeRecords.reduce(function(memo, rec){
           return memo + allWagesFor(rec)
       }, 0)
-  }
+  }*/
 
 
 /*
