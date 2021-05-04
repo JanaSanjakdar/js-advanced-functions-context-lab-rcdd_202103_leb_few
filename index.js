@@ -52,7 +52,7 @@ let wagesEarnedOnDate = function(employee, specificDate){
     return parseFloat(rawWage.toString())
 }
 
-/*let allWagesFor = function(employee){
+let allWagesFor = function(employee){
     let daysWorked = employee.timeInEvents.map(function(e){
         return e.date
     })
@@ -60,7 +60,7 @@ let wagesEarnedOnDate = function(employee, specificDate){
         return memo + wagesEarnedOnDate(employee, d)
     }, 0)
     return payable
-}*/
+}
 
 let findEmployeeByFirstName = function(srcArray, firstName) {
     return srcArray.find(function(rec){
@@ -68,11 +68,11 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
     })
   }
 
-/*  let calculatePayroll = function(arrayOfEmployeeRecords){
+let calculatePayroll = function(arrayOfEmployeeRecords){
       return arrayOfEmployeeRecords.reduce(function(memo, rec){
           return memo + allWagesFor(rec)
       }, 0)
-  }*/
+  }
 
 
 /*
@@ -84,7 +84,7 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
  for you to use if you need it!
  */
 
-let allWagesFor = function () {
+/*let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
     })
@@ -94,4 +94,5 @@ let allWagesFor = function () {
     }.bind(this), 0) // <== Hm, why did we need to add bind() there? We'll discuss soon!
 
     return payable
-}
+}*/
+
