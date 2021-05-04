@@ -95,4 +95,3 @@ let calculatePayroll = function(arrayOfEmployeeRecords){
 
     return payable
 }*/
-
