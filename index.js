@@ -52,7 +52,7 @@ let wagesEarnedOnDate = function(employee, specificDate){
     return parseFloat(rawWage.toString())
 }
 
-let allWagesFor = function(employee){
+/*let allWagesFor = function(employee){
     let daysWorked = employee.timeInEvents.map(function(e){
         return e.date
     })
@@ -60,7 +60,7 @@ let allWagesFor = function(employee){
         return memo + wagesEarnedOnDate(employee, d)
     }, 0)
     return payable
-}
+}*/
 
 let findEmployeeByFirstName = function(srcArray, firstName) {
     return srcArray.find(function(rec){
